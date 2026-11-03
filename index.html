@@ -87,11 +87,50 @@
   </style>
 </head>
 <body>
-    <h1>Portfolio of Interactive Visualizations</h1>
-    <p>Silakan pilih visualisasi di bawah ini:</p>
-    <ul>
-        <li><a href="barchartjs/">📊 Bar Chart Visualization</a></li>
-        <li><a href="leafletmap/">🗺️ Leaflet Map Visualization</a></li>
+  <main>
+    <h1>Interactive Visualization</h1>
+    <p class="intro">Kumpulan visualisasi data interaktif. Pilih salah satu untuk membukanya.</p>
+
+    <ul class="projects">
+
+      <!-- ========== PROYEK YANG SUDAH ADA ========== -->
+      <li>
+        <a class="project" href="barchartjs/">
+          <h2>Bar chart</h2>
+          <p>Perbandingan jumlah siswa pembelajar bahasa Inggris di beberapa distrik sekolah, dibuat dengan Chart.js.</p>
+          <span class="path">/barchartjs</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="project" href="errorbars/">
+          <h2>Error bars</h2>
+          <p>Perbandingan pendapatan median dan rata-rata untuk wilayah geografis yang berbeda.</p>
+          <span class="path">/errorbars</span>
+        </a>
+      </li>
+
+      <!-- ========== PROYEK YANG BELUM DIUPLOAD ========== -->
+      <!-- Saat folder sudah ada di repo: hapus class "soon" dari <div>,
+           ganti <div> menjadi <a class="project" href="leafletmap/"> -->
+      <li>
+        <div class="project soon" aria-disabled="true">
+          <h2>Leaflet map</h2>
+          <p>Peta interaktif dengan Leaflet. Folder belum diunggah ke repo.</p>
+          <span class="path">/leafletmap, segera hadir</span>
+        </div>
+      </li>
+
+      <!-- ========== TEMPLATE UNTUK MENAMBAH PROYEK BARU ==========
+      <li>
+        <a class="project" href="NAMA_FOLDER/">
+          <h2>Judul visualisasi</h2>
+          <p>Satu kalimat tentang isi visualisasi.</p>
+          <span class="path">/NAMA_FOLDER</span>
+        </a>
+      </li>
+      -->
+
     </ul>
 
     <footer>Setiap proyek berada di folder sendiri dan harus punya file <code>index.html</code>.</footer>
